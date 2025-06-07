@@ -1,0 +1,33 @@
+# --------------------------------------------------------
+# Ignorar arquivo de conexão que contém credenciais reais
+/site/admin/database/db.class.php
+
+# Ignorar dependências do Composer (caso use alguma biblioteca)
+/vendor/
+
+# Ignorar pasta de uploads, cache ou temporários (caso existam)
+/public/uploads/
+/public/temp/
+/site/admin/temp/
+
+# Ignorar arquivos de log e dumps grandes
+*.log
+*.sql.gz
+*.sql   # se você gerar dumps locais, não quer versionar isso aqui
+
+# Ignorar arquivos de IDE/Sistema operacional
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Se estiver usando Node/Tailwind/Webpack etc.
+/node_modules/
+/build/
+/dist/
+
+# Em geral, arquivos de ambiente (.env) não serão usados mais,
+# mas caso volte a ter algum, mantenha a linha abaixo:
+/.env

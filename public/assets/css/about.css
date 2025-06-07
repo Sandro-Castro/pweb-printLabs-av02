@@ -1,0 +1,28 @@
+:root {
+    --verde-escuro: #0D2613;
+    --verde-petroleo: #245E58;
+    --verde-limao: #A9E420;
+}
+
+
+.bg-printlabs {
+    background-color: var(--verde-escuro) !important;
+}
+
+
+body {
+    padding-top: 80px;
+}
+
+
+.accordion-button:not(.collapsed) {
+    background-color: #d1f3db;
+    color: #0f2e1a;
+}
+
+
+
+
+.accordion-button:focus {
+    box-shadow: none;
+}

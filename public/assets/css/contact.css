@@ -1,0 +1,41 @@
+:root {
+    --verde-escuro: #0D2613;
+    --verde-petroleo: #245E58;
+    --verde-limao: #A9E420;
+}
+
+.bg-printlabs {
+    background-color: var(--verde-escuro) !important;
+}
+
+.contact-card {
+    background: white;
+    border-radius: 15px;
+    border: 2px solid var(--verde-limao);
+}
+
+.btn-printlabs {
+    background-color: var(--verde-petroleo);
+    color: white;
+    transition: all 0.3s;
+}
+
+.btn-printlabs:hover {
+    background-color: var(--verde-limao);
+    color: var(--verde-escuro);
+}
+
+.map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid var(--verde-limao);
+}
+
+body {
+    padding-top: 80px;
+}
+
+.nav-link.active {
+    border-bottom: 3px solid var(--verde-limao) !important;
+}
+

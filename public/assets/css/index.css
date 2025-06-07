@@ -1,0 +1,46 @@
+:root {
+    --verde-escuro: #0D2613;
+    --verde-petroleo: #245E58;
+    --verde-limao: #A9E420;
+}
+
+.bg-printlabs {
+    background-color: var(--verde-escuro) !important;
+}
+
+body {
+    padding-top: 80px;
+}
+
+
+#mainCarousel {
+    max-width: 90%; 
+    margin: 0 auto; 
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 85%; 
+    margin: 0 auto; 
+    display: block;
+    object-fit: contain;
+    max-height: 600px; 
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+
+
+@media (max-width: 768px) {
+    #mainCarousel {
+        max-width: 95%;
+    }
+    
+    .carousel-item img {
+        width: 90%;
+    }
+}

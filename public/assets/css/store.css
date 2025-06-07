@@ -1,0 +1,49 @@
+:root {
+    --verde-escuro: #0D2613;
+    --verde-petroleo: #245E58;
+    --verde-limao: #A9E420;
+}
+
+.bg-printlabs {
+    background-color: var(--verde-escuro) !important;
+}
+
+body {
+    padding-top: 80px;
+}
+
+.card-img-top{
+    
+}
+.page-title {
+    position: relative;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    color: #245E58;
+}
+
+.page-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.product-card:hover {
+    border-color: #A9E420;
+    box-shadow: 0 8px 25px rgba(13, 38, 19, 0.1);
+}
+
+.btn-comprar {
+    background: linear-gradient(145deg, #245E58 0%, #1a463f 100%);
+    color: white !important;
+    border-radius: 8px;
+}
+
+.btn-detalhes {
+    border: 2px solid #245E58;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
