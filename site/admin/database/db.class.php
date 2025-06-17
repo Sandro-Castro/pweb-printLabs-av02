@@ -4,7 +4,7 @@ class DB
 {
     private $host     = 'localhost';
     private $user     = 'root';
-    private $password = '696669';
+    private $password = '';
     private $port     = '3306';
     private $dbname   = 'printlab';
 
@@ -105,6 +105,14 @@ class DB
         $st    = $pdo->prepare("SELECT * FROM {$this->tableName} WHERE {$field} LIKE ?");
         $st->execute([$val]);
         return $st->fetchAll(PDO::FETCH_CLASS);
+    }
+
+    public function findBy($field, $value)
+    {
+        $pdo = $this->conn();
+        $st  = $pdo->prepare("SELECT * FROM {$this->tableName} WHERE {$field} = ?");
+        $st->execute([$value]);
+        return $st->fetchObject();
     }
 }
 ?>
