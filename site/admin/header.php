@@ -1,22 +1,39 @@
 <?php
+// site/admin/header.php
+
+// Habilitar debug durante desenvolvimento:
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 ?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>PrintLab 3D – Admin</title>
-  <link rel="stylesheet" href="../../public/assets/css/main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrintLab Admin</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        
+       >
+  
 </head>
-<body>
-  <header class="bg-gray-800 text-white py-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <a href="index.php" class="text-2xl font-semibold">PrintLab 3D - Admin</a>
-      <nav>
-        <a href="usuario/UsuarioList.php"   class="mr-4 hover:underline">Usuários</a>
-        <a href="categoria/CategoriaList.php" class="mr-4 hover:underline">Categorias</a>
-        <a href="produto/ProdutoList.php"    class="mr-4 hover:underline">Produtos</a>
-        <a href="logout.php" class="hover:underline">Logout</a>
-      </nav>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.php">PrintLab Admin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#adminNavbar" aria-controls="adminNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="adminNavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="user/UserList.php">Users</a></li>
+          <li class="nav-item"><a class="nav-link" href="category/CategoryList.php">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="product/ProductList.php">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="order/OrderList.php">Orders</a></li>
+        </ul>
+      </div>
     </div>
-  </header>
-  <main class="container mx-auto p-6">
+  </nav>
+  <main class="container">
