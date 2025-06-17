@@ -1,5 +1,6 @@
 <?php
 // site/admin/header.php
+$base = '/pweb-printLabs-av02/site/admin';
 
 // Habilitar debug durante desenvolvimento:
 ini_set('display_errors', 1);
@@ -20,20 +21,25 @@ error_reporting(E_ALL);
 </head>
 <body class="bg-light">
   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom mb-4">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.php">PrintLab Admin</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#adminNavbar" aria-controls="adminNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="adminNavbar">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="user/UserList.php">Users</a></li>
-          <li class="nav-item"><a class="nav-link" href="category/CategoryList.php">Categories</a></li>
-          <li class="nav-item"><a class="nav-link" href="product/ProductList.php">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="order/OrderList.php">Orders</a></li>
-        </ul>
-      </div>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="<?= $base ?>/index.php">
+      <!-- ✅ Logo -->
+      <img src="" alt="Logo" width="50" height="50" class="me-2">
+      <!-- ✅ Texto -->
+      PrintLab Admin
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#adminNavbar" aria-controls="adminNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="adminNavbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="<?= $base ?>/user/UserList.php">Users</a></li>
+        <li class="nav-item"><a class="nav-link" href="<?= $base ?>/category/CategoryList.php">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="<?= $base ?>/product/ProductList.php">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="<?= $base ?>/order/OrderList.php">Orders</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
   <main class="container">
