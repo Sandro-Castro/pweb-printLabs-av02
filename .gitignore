@@ -1,6 +1,6 @@
 # --------------------------------------------------------
-# Ignorar arquivo de conexão que contém credenciais reais
-
+# ignora todos os arquivos dentro de public/assets/img/products
+/site/public/assets/img/products/
 
 # Ignorar dependências do Composer (caso use alguma biblioteca)
 /vendor/
