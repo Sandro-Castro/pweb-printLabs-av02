@@ -84,6 +84,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="container login-container d-flex align-items-center justify-content-center">
     <div class="card shadow-sm w-100" style="max-width: 400px;">
       <div class="card-body">
+        <div class="text-center mb-3">
+          <img src="../assets/img/logo.png" alt="Logo PrintLabs" style="max-width: 150px;">
+        </div>
+
         <h4 class="card-title mb-4 text-center">Admin Login</h4>
 
         <?php if (!empty($errors)): ?>
@@ -107,10 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="password" name="password" id="password" class="form-control" required>
           </div>
           <div class="d-grid mb-3">
-            <button type="submit" class="btn btn-primary">Log In</button>
-          </div>
-          <div class="text-center">
-            <small>Don't have an account? <a href="../public/register.php">Register here</a></small>
+            <button type="submit" class="btn btn-success">Log In</button>
           </div>
         </form>
       </div>
