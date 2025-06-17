@@ -8,7 +8,7 @@ $orders = $db->all();
 <div class="px-3">
   <div class="d-flex justify-content-between align-items-center mb-3">
     <h2 class="h4">Orders</h2>
-    <a href="OrderForm.php" class="btn btn-primary">New Order</a>
+    <a href="OrderForm.php" class="btn btn-success">New Order</a>
   </div>
   <div class="table-responsive">
     <table class="table table-striped table-bordered align-middle">

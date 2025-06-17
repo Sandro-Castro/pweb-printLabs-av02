@@ -122,7 +122,7 @@ if (!empty($_GET['id'])) {
         </div>
       <?php endif; ?>
     </div>
-    <button type="submit" class="btn btn-primary"><?= !empty($_GET['id']) ? "Update" : "Create" ?></button>
+    <button type="submit" class="btn btn-success"><?= !empty($_GET['id']) ? "Update" : "Create" ?></button>
     <a href="ProductList.php" class="btn btn-secondary ms-2">Back</a>
   </form>
 </div>

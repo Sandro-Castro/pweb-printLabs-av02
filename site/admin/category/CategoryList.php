@@ -8,7 +8,7 @@ $categories = $db->all();
 <div class="px-3">
   <div class="d-flex justify-content-between align-items-center mb-3">
     <h2 class="h4">Categories</h2>
-    <a href="CategoryForm.php" class="btn btn-primary">New Category</a>
+    <a href="CategoryForm.php" class="btn btn-success">New Category</a>
   </div>
   <div class="table-responsive">
     <table class="table table-striped table-bordered align-middle">

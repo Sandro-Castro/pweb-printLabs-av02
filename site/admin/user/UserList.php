@@ -8,7 +8,7 @@ $users = $db->all();
 <div class="px-3">
   <div class="d-flex justify-content-between align-items-center mb-3">
     <h2 class="h4">Users</h2>
-    <a href="UserForm.php" class="btn btn-primary">New User</a>
+    <a href="UserForm.php" class="btn btn-success">New User</a>
   </div>
   <div class="table-responsive">
     <table class="table table-striped table-bordered align-middle">
