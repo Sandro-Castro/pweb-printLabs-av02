@@ -1,6 +1,6 @@
 # --------------------------------------------------------
 # Ignorar arquivo de conexão que contém credenciais reais
-/site/admin/database/db.class.php
+
 
 # Ignorar dependências do Composer (caso use alguma biblioteca)
 /vendor/
