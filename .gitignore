@@ -1,6 +1,6 @@
 # --------------------------------------------------------
 # ignora todos os arquivos dentro de public/assets/img/products
-/site/public/assets/img/products/
+/site/assets/IMG/products/
 
 # Ignorar dependências do Composer (caso use alguma biblioteca)
 /vendor/

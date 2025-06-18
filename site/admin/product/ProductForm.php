@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         $newName  = uniqid('prod_') . "." . $ext;
         
-        $dest = __DIR__ . '/../../public/assets/img/products/' . $newName;
+        $dest = __DIR__ . '../../../assets/IMG/products/' . $newName;
         if (!is_dir(dirname($dest))) {
             mkdir(dirname($dest), 0755, true);
         }

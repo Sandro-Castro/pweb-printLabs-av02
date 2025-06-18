@@ -33,7 +33,7 @@ $products = $db->all();
           <td><?= $p->category_id ?></td>
           <td>
             <?php if (!empty($p->image)): ?>
-              <img src="/assets/img/products/<?= htmlspecialchars($p->image) ?>" alt="" style="width: 50px; height:50px; object-fit:cover;">
+              <img src="/pweb-printLabs-av02/site/assets/IMG/products/<?= htmlspecialchars($p->image) ?>" alt="" style="width: 50px; height:50px; object-fit:cover;">
             <?php else: ?>
               <span class="text-muted">No Image</span>
             <?php endif; ?>
@@ -51,7 +51,7 @@ $products = $db->all();
           <td colspan="7" class="text-center text-muted py-3">No products found.</td>
         </tr>
       <?php endif; ?>
-      </tbody>
+      </tbody>  
     </table>
   </div>
 </div>
