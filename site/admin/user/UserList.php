@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/../database/db.class.php';
+require_once __DIR__ . '/../auth.php';
 include __DIR__ . '/../header.php';
 
 $db = new DB('users');

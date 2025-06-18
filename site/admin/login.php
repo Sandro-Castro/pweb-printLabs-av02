@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $errors[] = "Invalid username or password.";
             } else {
                 if ($user->role !== 'admin') {
-                    $errors[] = "Access denied: you are not an admin.";
+                    $errors[] = "Invalid username or password.";
                 } else {
                     $_SESSION['user_id'] = $user->id;
                     $_SESSION['username'] = $user->username;

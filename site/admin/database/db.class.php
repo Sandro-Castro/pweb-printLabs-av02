@@ -4,7 +4,7 @@ class DB
 {
     private $host     = 'localhost';
     private $user     = 'root';
-    private $password = '696669';
+    private $password = '';
     private $port     = '3306';
     private $dbname   = 'printlab';
 
