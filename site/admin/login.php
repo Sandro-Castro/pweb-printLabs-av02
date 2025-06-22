@@ -71,6 +71,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Admin Login - PrintLab</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
   <style>
     body, html {
         height: 100%;
@@ -111,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="password" name="password" id="password" class="form-control" required>
           </div>
           <div class="d-grid mb-3">
-            <button type="submit" class="btn btn-success">Log In</button>
+            <button type="submit" class="btn btn-success"><i class="fa-solid fa-right-to-bracket"></i> Log In</button>
           </div>
         </form>
       </div>

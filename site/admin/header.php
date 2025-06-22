@@ -22,6 +22,7 @@ $isAdmin = $isLoggedIn && $_SESSION['role'] === 'admin';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PrintLab Admin</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="<?= $base ?>/../assets/CSS/styles.css">
 
 </head>
@@ -55,7 +56,7 @@ $isAdmin = $isLoggedIn && $_SESSION['role'] === 'admin';
               </span>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-danger fs-5" href="<?= $base ?>/logout.php">Logout</a>
+              <a class="nav-link text-danger fs-5" href="<?= $base ?>/logout.php"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
             </li>
           <?php else: ?>
             <li class="nav-item">

@@ -109,8 +109,14 @@ if (!empty($_GET['id'])) {
         <?php endforeach; ?>
       </select>
     </div>
-    <button type="submit" class="btn btn-success"><?= !empty($_GET['id']) ? "Update" : "Create" ?></button>
-    <a href="OrderList.php" class="btn btn-secondary ms-2">Back</a>
+    <button type="submit" class="btn btn-success">
+      <?php if (!empty($_GET['id'])): ?>
+        <i class="fa-solid fa-pen-to-square"></i> Update
+      <?php else: ?>
+        <i class="fa-solid fa-plus"></i> Create
+      <?php endif; ?>
+    </button>
+    <a href="OrderList.php" class="btn btn-secondary ms-2"><i class="fa-solid fa-arrow-left-long"></i> Back</a>
   </form>
 </div>
 <?php include __DIR__ . '/../footer.php'; ?>
