@@ -64,8 +64,14 @@ if (!empty($_GET['id'])) {
       <label class="form-label">Description</label>
       <textarea name="description" class="form-control" rows="4"><?= htmlspecialchars($data->description ?? '') ?></textarea>
     </div>
-    <button type="submit" class="btn btn-success"><?= !empty($_GET['id']) ? "Update" : "Create" ?></button>
-    <a href="CategoryList.php" class="btn btn-secondary ms-2">Back</a>
+    <button type="submit" class="btn btn-success">
+      <?php if (!empty($_GET['id'])): ?>
+        <i class="fa-solid fa-pen-to-square"></i> Update
+      <?php else: ?>
+        <i class="fa-solid fa-plus"></i> Create
+      <?php endif; ?>
+    </button>
+    <a href="CategoryList.php" class="btn btn-secondary ms-2"><i class="fa-solid fa-arrow-left-long"></i>  Back</a>
   </form>
 </div>
 <?php include __DIR__ . '/../footer.php'; ?>
