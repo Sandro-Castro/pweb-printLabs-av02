@@ -51,17 +51,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     
     if (empty($errors)) {
-        
+        $color = trim($_POST['color'] ?? '');
+
         $record = [
             'name' => trim($_POST['name']),
             'description' => trim($_POST['description'] ?? ''),
             'type' => $type,
             'color' => $color !== '' ? $color : null,
-            
             'price_per_gram' => number_format(floatval($_POST['price_per_gram']), 4, '.', ''),
             'stock_quantity' => intval($_POST['stock_quantity']),
             'status' => $status
         ];
+
         try {
             if (empty($_POST['id'])) {
                 
