@@ -10,6 +10,7 @@ include __DIR__ . '/header.php';
     <a href="category/CategoryList.php" class="list-group-item list-group-item-action">Manage Categories</a>
     <a href="product/ProductList.php" class="list-group-item list-group-item-action">Manage Products</a>
     <a href="order/OrderList.php" class="list-group-item list-group-item-action">Manage Orders</a>
+    <a href="material/MaterialList.php" class="list-group-item list-group-item-action">Manage Materials</a>
   </div>
 </div>
 <?php include __DIR__ . '/footer.php'; ?>

@@ -4,7 +4,7 @@ class DB
 {
     private $host     = 'localhost';
     private $user     = 'root';
-    private $password = '';
+    private $password = '696669';
     private $port     = '3306';
     private $dbname   = 'printlab';
 
@@ -32,6 +32,18 @@ class DB
         } catch (PDOException $e) {
             exit("Connection Error: " . $e->getMessage());
         }
+    }
+    public function getConnection()
+    {
+        return $this->conn();
+    }
+
+    public function query($sql, $params = [])
+    {
+        $pdo = $this->conn();
+        $st  = $pdo->prepare($sql);
+        $st->execute($params);
+        return $st->fetchAll(PDO::FETCH_OBJ);
     }
 
     public function all()
@@ -114,5 +126,6 @@ class DB
         $st->execute([$value]);
         return $st->fetchObject();
     }
+
 }
 ?>

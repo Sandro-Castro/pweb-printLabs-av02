@@ -46,6 +46,7 @@ $isAdmin = $isLoggedIn && $_SESSION['role'] === 'admin';
             </li>
             <li class="nav-item"><a class="nav-link fs-5" href="<?= $base ?>/product/ProductList.php">Products</a></li>
             <li class="nav-item"><a class="nav-link fs-5" href="<?= $base ?>/order/OrderList.php">Orders</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?= $base ?>/material/MaterialList.php">Materials</a></li>
           <?php endif; ?>
         </ul>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
